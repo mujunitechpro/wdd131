@@ -53,8 +53,9 @@ header h1 {
 }
 
 .navigation {
-    width: 100%;
+   justify-content: center;
     display: flex;
+    width: 100%;
 }
 
 .navigation ul {
