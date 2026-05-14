@@ -1,0 +1,30 @@
+
+@media screen and (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        width: auto;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem 1rem;
+        border-radius: 5px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+        main h1 {
+            font-size: 2rem;
+        }
+}
