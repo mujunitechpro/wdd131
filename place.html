@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanzania</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tanzania</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 800px)" srcset="images/Tanzania-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/Tanzania-medium.webp">
+                <img src="images/Tanzania-large.webp" alt="Lions in Tanzania" width="1200" height="600">
+            </picture>
+
+            <section class="card data-card">
+                <h2>Data</h2>
+
+                <ul>
+                   <li><strong>Area: </strong>947,303 sq km</li>
+                   <li><strong>Population: </strong>72,000,000</li>
+                   <li><strong>Capital: </strong>Dodoma</li>
+                   <li><strong>Languages: </strong>Kiswahili, English</li>
+                   <li><strong>Currency: </strong>Tanzanian shilling</li>
+                   <li><strong>Time Zone: </strong>EAT</li>
+                   <li><strong>Calling code: </strong>+255</li>
+                   <li><strong>Internet TLD: </strong>.tz</li>
+                </ul>
+            </section>
+
+            <section class="card weather-card">
+                <h2>
+                    Weather
+                    <span class="weather-icon">⛅</span>
+                </h2>
+
+                <ul>
+                    <li><strong>Temperature: </strong>20°C</li>
+                    <li><strong>Conditions: </strong>Partly warm</li>
+                    <li><strong>Wind: </strong>5km/h</li>
+                    <li><strong>Wind Chill: </strong><span class="wind-chill-value"></span></li>
+                </ul>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Baraka Gosbert Mujuni | Tanzania
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

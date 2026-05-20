@@ -1,0 +1,123 @@
+
+:root {
+    --blue: blue;
+    --green: #00843d;
+    --white: #ffffff;
+    --text: #111;
+    --card-bg: rgba(255, 255, 255, 0.88);
+
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    --radius: 10px;
+
+    --font-main: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--blue);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+header {
+    background: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 10px solid var(--green);
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img,
+.hero picture {
+    width: 100%;
+    display: block;
+}
+
+.card {
+    position: absolute;
+    width: 260px;
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(4px);
+}
+
+.card h2 {
+    background: var(--green);
+    color: var(--white);
+    padding: 0.75rem;
+    margin: -1rem -1rem 1rem -1rem;
+    font-size: 1.4rem;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    margin-bottom: 0.6rem;
+}
+
+.data-card {
+    top: 40px;
+    left: 20px;
+}
+
+.weather-card {
+    bottom: 40px;
+    right: 20px;
+}
+
+.weather-card h2::after {
+    content: " ⛅";
+    font-size: 1.2rem;
+}
+
+footer {
+    background: burlywood;
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        position: static;
+        width: 100%;
+        margin: 1rem 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .card h2 {
+        text-align: center;
+    }
+}
