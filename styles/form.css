@@ -97,3 +97,15 @@ footer {
     color: blue;
     font-size: 0.85rem;
 }
+
+@media screen and (max-width: 600px) {
+    form {
+        padding: 1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+}

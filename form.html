@@ -1,10 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Product Review Form</title>
+
+    <meta name="description" content="Product review form page for submitting user product feedback.">
+    <meta name="author" content="Baraka Gosbert Mujuni">
+
     <link rel="stylesheet" href="styles/form.css">
 </head>
 
@@ -15,6 +21,7 @@
     </header>
 
     <main>
+
         <form method="get" action="review.html">
 
             <label for="productName">Product Name *</label>
@@ -24,69 +31,72 @@
 
             <fieldset class="rating-group">
                 <legend>Overall Rating</legend>
-            
+
                 <div class="rating-options">
-            
+
                     <div>
-                        <label for="r1">★</label>
                         <input type="radio" id="r1" name="rating" value="1" required>
+                        <label for="r1">★</label>
                     </div>
-            
+
                     <div>
-                        <label for="r2">★★</label>
                         <input type="radio" id="r2" name="rating" value="2">
+                        <label for="r2">★★</label>
                     </div>
-            
+
                     <div>
-                        <label for="r3">★★★</label>
                         <input type="radio" id="r3" name="rating" value="3">
+                        <label for="r3">★★★</label>
                     </div>
-            
+
                     <div>
-                        <label for="r4">★★★★</label>
                         <input type="radio" id="r4" name="rating" value="4">
+                        <label for="r4">★★★★</label>
                     </div>
-            
+
                     <div>
-                        <label for="r5">★★★★★</label>
                         <input type="radio" id="r5" name="rating" value="5">
+                        <label for="r5">★★★★★</label>
                     </div>
-            
+
                 </div>
             </fieldset>
 
+            
             <label for="installDate">Date of Installation *</label>
             <input type="date" id="installDate" name="installDate" required>
 
+            
             <fieldset class="features-group">
                 <legend>
                     Which features did you find useful in the product?
                     <br>
                     <em>(Check all that apply)</em>
                 </legend>
-            
-                <label>
+
+                <label for="durability">
                     <input type="checkbox" id="durability" name="features" value="Durability">
                     Durability
                 </label>
-            
-                <label>
+
+                <label for="ease">
                     <input type="checkbox" id="ease" name="features" value="Ease of Use">
                     Ease of Use
                 </label>
-            
-                <label>
+
+                <label for="performance">
                     <input type="checkbox" id="performance" name="features" value="Performance">
                     Performance
                 </label>
-            
-                <label>
+
+                <label for="design">
                     <input type="checkbox" id="design" name="features" value="Design">
                     Design
                 </label>
+
             </fieldset>
 
-
+            
             <label for="review">Written Review <span class="optional">(Optional)</span></label>
             <textarea id="review" name="review" rows="5"></textarea>
 
@@ -96,14 +106,15 @@
             <input type="submit" value="Submit Review">
 
         </form>
+
     </main>
 
     <footer>
-        <p>&copy; ⛅Baraka Gosbert Mujuni⛅ Tanzania<span id="year"></span> Your Name</p>
+        <p>&copy; <span id="year"></span> Baraka Gosbert Mujuni ⛅ Tanzania</p>
         <p>Last Modified: <span id="modified"></span></p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="scripts/form.js" defer></script>
 
 </body>
 
